@@ -1,22 +1,42 @@
 # Task 7: Basic Sales Summary using SQLite + Python
 
-## Objective
-Use SQL inside Python to pull simple sales info (total quantity, revenue) and display results with print and a simple bar chart.
+## 📌 Objective
+Use SQL inside Python to pull simple sales info (like total quantity sold, total revenue), and display results with print statements and a simple bar chart.
 
-## Tools
-- Python (sqlite3, pandas, matplotlib)
-- SQLite (built-in, no extra setup)
+---
 
-## Steps Done
-1. Created a tiny SQLite database `sales_data.db` with one `sales` table.
-2. Inserted some sample sales records (Apples, Bananas, Oranges).
-3. Ran SQL query to calculate:
-   - Total quantity sold per product
-   - Total revenue (quantity × price)
-4. Loaded results into pandas DataFrame.
-5. Printed results in console.
-6. Plotted revenue by product as bar chart (`sales_chart.png`).
+## 🛠 Tools Used
+- **Python** (`sqlite3`, `pandas`, `matplotlib`)
+- **SQLite** (lightweight database, built into Python)
+- **Jupyter Notebook** (`sales_summary.ipynb`)
 
-## How to Run
-```bash
-python sales_summary.py
+---
+
+## 📂 Files in Repo
+- `sales_summary.ipynb` → Jupyter Notebook with full step-by-step solution  
+- `sales_data.db` → Tiny SQLite database file with a single sales table  
+- `sales_chart.png` → Bar chart showing revenue by product  
+- `README.md` → Project explanation and instructions  
+
+---
+
+## 🚀 Steps Done
+1. Connected Python to SQLite database (`sales_data.db`).
+2. Created a `sales` table with columns: `product`, `quantity`, `price`.
+3. Inserted sample sales data (Apples, Bananas, Oranges).
+4. Ran SQL query to calculate:
+   - **Total quantity sold per product**
+   - **Total revenue (quantity × price)**
+5. Loaded SQL query result into a pandas DataFrame.
+6. Printed results in console.
+7. Plotted a **bar chart of revenue by product** (`sales_chart.png`).
+
+---
+
+## ▶️ How to Run
+1. Clone/download this repo  
+2. Open the notebook in **Jupyter Notebook / Jupyter Lab / VS Code**  
+3. Run all cells step by step  
+   ```bash
+   jupyter notebook sales_summary.ipynb
+
